@@ -4,19 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Steeleworks Wellness</title>
-
-  <!-- Styles & Icons -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-  <!-- BACKGROUND TEXTURE WRAPPER -->
   <div class="background-texture"></div>
 
   <!-- HEADER -->
   <header class="navbar">
     <div class="logo">Steeleworks <span>Wellness</span></div>
+
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -25,103 +23,92 @@
         <li><a href="#contact">Connect</a></li>
       </ul>
     </nav>
-    <a href="#contact" class="btn-primary">Book a Session</a>
+
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
-    <!-- Background image controlled in CSS -->
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Thrive Through Change</h1>
       <p>Supporting women with movement, nourishment, and balance.</p>
-      <a href="#services" class="btn-secondary">Explore Wellness</a>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-secondary">Explore Wellness</a>
+        <a href="#contact" class="btn-primary">Book a Session</a>
+      </div>
     </div>
   </section>
 
-  <!-- IMAGE STRIP 1: NATURE or CALM BACKGROUND -->
-  <section class="image-strip full-bleed" id="image-strip-1">
-    <!-- background-image set in CSS -->
-  </section>
+  <!-- ABOUT -->
 
-  <!-- ABOUT SECTION -->
-<section id="about" class="about">
-<div class="about-wrapper">
-    <div class="about-image-container">
-    <img src="images/portrait.jpg" alt="Coach portrait" class="about-image" />
-    </div>
-    <div class="about-text patchwork">
-    <h2>Meet <span>Steeleworks Wellness</span></h2>
-    <p>Guiding women through the physical and emotional changes of menopause with mindful coaching — blending Pilates, nutrition, and holistic living.</p>
-    </div>
-</div>
+<!-- PHOTO STRIPS / PATCHWORK -->
+<section class="image-strips">
+  <div class="strip strip-1"></div>
 </section>
 
-
-  <!-- IMAGE STRIP 2: FOOD or MOVEMENT -->
-  <section class="image-strip full-bleed" id="image-strip-2">
-    <!-- background-image set in CSS -->
+  <section id="about" class="split-section">
+    <div class="split-image">
+      <img src="images/portrait.jpg" alt="Coach portrait">
+    </div>
+    <div class="split-text">
+      <h2>Meet <span>Steeleworks Wellness</span></h2>
+      <p>Guiding women through the physical and emotional changes of menopause with mindful coaching — blending Pilates, nutrition, and holistic living.</p>
+    </div>
   </section>
 
-  <!-- SERVICES / PILLARS SECTION -->
+  <!-- APPROACH -->
+   <!-- PHOTO STRIPS / PATCHWORK -->
+<section class="image-strips">
+  <div class="strip strip-1"></div>
+  <div class="strip strip-2"></div>
+  <div class="strip strip-3"></div>
+</section>
   <section id="services" class="pillars">
-    <div class="section-bg"></div> <!-- background color or pattern overlay -->
-    <div class="pillars-inner">
-      <h2>Our Approach</h2>
-      <div class="card-grid">
-        <div class="card">
-          <i class="fa-solid fa-person-running"></i>
-          <h3>Movement</h3>
-          <p>Pilates and mindful movement for strength and alignment.</p>
-        </div>
-        <div class="card">
-          <i class="fa-solid fa-apple-whole"></i>
-          <h3>Nutrition</h3>
-          <p>Balanced nourishment for vitality and hormonal support.</p>
-        </div>
-        <div class="card">
-          <i class="fa-flower"></i>
-          <h3>Mindfulness</h3>
-          <p>Calm practices for connection and peace in transition.</p>
-        </div>
+    <h2>Our Approach</h2>
+    <div class="card-grid">
+      <div class="card">
+        <i class="fa-solid fa-person-running"></i>
+        <h3>Movement</h3>
+        <p>Pilates and mindful movement for strength and alignment.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-apple-whole"></i>
+        <h3>Nutrition</h3>
+        <p>Balanced nourishment for vitality and hormonal support.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-lotus"></i>
+        <h3>Mindfulness</h3>
+        <p>Calm practices for connection and peace in transition.</p>
       </div>
     </div>
   </section>
 
-  <!-- IMAGE STRIP 3: WELLNESS LIFESTYLE -->
-  <section class="image-strip full-bleed" id="image-strip-3">
-    <!-- background-image set in CSS -->
-  </section>
-
-  <!-- TESTIMONIALS SECTION -->
-  <section id="stories" class="testimonials">
-    <div class="background-overlay"></div>
-    <h2>Client Stories</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>"I feel stronger, calmer, and more myself than ever before."</p>
-        <h4>— Julia M.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Pilates and mindful nutrition have transformed my energy."</p>
-        <h4>— Anita D.</h4>
-      </div>
+  <!-- TESTIMONIALS -->
+  <section id="stories" class="split-section reverse">
+    <div class="split-image">
+      <img src="images/women-pilates.jpg" alt="Client practicing Pilates">
+    </div>
+    <div class="split-text">
+      <h2>Client Stories</h2>
+      <blockquote>
+        “I feel stronger, calmer, and more myself than ever before.”<br>— Julia M.
+      </blockquote>
+      <blockquote>
+        “Pilates and mindful nutrition have transformed my energy.”<br>— Anita D.
+      </blockquote>
     </div>
   </section>
 
-  <!-- IMAGE STRIP 4: NATURE CLOSE-UP OR PILATES ACTION -->
-  <section class="image-strip full-bleed" id="image-strip-4">
-    <!-- background-image set in CSS -->
-  </section>
-
-  <!-- CALL TO ACTION -->
+  <!-- CTA -->
   <section id="contact" class="cta">
     <h2>Ready to Begin?</h2>
     <p>Book your consultation or join a class at the studio.</p>
     <a href="mailto:info@steeleworkswellness.com" class="btn-primary">Get in Touch</a>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Steeleworks Wellness | Designed with calm + care</p>
     <div class="socials">
@@ -130,5 +117,7 @@
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
